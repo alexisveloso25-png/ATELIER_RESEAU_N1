@@ -54,12 +54,12 @@ Vous avez vu dans cette séquence comment créer des secrets GiHUB afin de mettr
 Vous pouvez observez les différentes couches OSI sur votre site **{site}.pythonanywhere.com/osi**  
   
 **Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**    
-🔹Un protocole, 
-🔹Une entité protocolaire,  
-🔹Un service, 
-🔹Une primitive de service, 
-🔹Une Service Data Unit (SDU) par rapport à une PDU 
-🔹Un point d'accès à un service SAP (Service Access Point) 
+🔹Un protocole,  
+🔹Une entité protocolaire,   
+🔹Un service,  
+🔹Une primitive de service,  
+🔹Une Service Data Unit (SDU) par rapport à une PDU  
+🔹Un point d'accès à un service SAP (Service Access Point)  
 
 ---------------------------------------------------
 🗺️ Séquence 5 : Retour sur le protocole DHCP
