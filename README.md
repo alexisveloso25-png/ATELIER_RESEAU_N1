@@ -55,21 +55,25 @@ Vous pouvez observez les différentes couches OSI sur votre site **{site}.python
   
 **Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**  
 
-* Un protocole : C'est un ensemble de règles qui régissent la communication entre deux entités distantes. Il définit le format des messages, leur ordre d'envoi et la gestion des erreurs.
-
-  Exemple : Le protocole HTTP (Couche 7) définit que pour obtenir ta page /osi
+* Un protocole : C’est le "règlement" d'une couche. Il définit comment deux machines se parlent pour que le service fonctionne. Un protocole de niveau N précise le format des messages et l'ordre des échanges (qui parle en premier, que faire en cas d'erreur).
   
-* Une entité protocolaire : Il s'agit de l'élément actif (logiciel ou matériel) qui implémente les fonctions d'une couche spécifique sur une machine. ils sont souvent appelées "entités homologues".
+  Exemple : Le protocole HTTP définit qu'un client doit envoyer "GET" pour recevoir une page web.
+  
+* Une entité protocolaire : C’est le programme ou le composant qui exécute les règles du protocole. On l'appelle souvent "automate" car elle réagit selon des états précis.
 
   Exemple : Ton navigateur (Chrome) est une entité de couche 7. Il communique avec l'entité homologue (le serveur Web de PythonAnywhere)
   
-* Un service : Un service représente l'offre de fonctionnalités qu'une couche inférieure met à la disposition de la couche immédiatement supérieure l'utilisateur. Le service décrit ce que fait la couche.
+* Un service : C’est la fonctionnalité qu'une couche offre à celle juste au-dessus d'elle. Le service dit ce que fait la couche, mais pas comment elle le fait techniquement.
 
   Exemple : La couche Liaison (Couche 2) offre un service de "transfert de trames" à la couche Réseau, peu importe que la connexion soit en Wi-Fi ou en Ethernet.
 
-* Une primitive de service : C'est une interaction élémentaire entre deux couches adjacentes sur la même machine. C'est l'outil qui permet de solliciter un service.
+* Une primitive de service :C’est l'interaction standardisée pour demander ou recevoir un service entre deux couches sur la même machine. Il en existe 4 types principaux :
 
-  Exemple : Lorsque ton application Flask veut envoyer du JSON, elle utilise un type Request pour demander à la couche inférieure de transporter la donnée.
+  4 types :
+  - REQ (Request) : La couche supérieure demande un service.
+  - IND (Indication) : La couche inférieure signale un événement ou une demande d'en face.
+  - RESP (Response) : La couche supérieure répond à l'indication.
+  - CONF (Confirmation) : La couche inférieure confirme que la requête initiale est terminée.
   
 * Une Service Data Unit (SDU) par rapport à une PDU / Ces termes décrivent l'évolution de la donnée lors de l'encapsulation :
 
