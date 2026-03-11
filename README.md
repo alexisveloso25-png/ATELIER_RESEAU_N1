@@ -53,13 +53,35 @@ Vous avez vu dans cette séquence comment créer des secrets GiHUB afin de mettr
 ---------------------------------------------------
 Vous pouvez observez les différentes couches OSI sur votre site **{site}.pythonanywhere.com/osi**  
   
-**Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**    
-* Un protocole,  
-* Une entité protocolaire,
-* Un service,  
-* Une primitive de service,  
-* Une Service Data Unit (SDU) par rapport à une PDU  
-* Un point d'accès à un service SAP (Service Access Point)  
+**Exercice 1 : Définissez les termes suivants (Répondre directement dans GitHub)**  
+
+* Un protocole : C'est un ensemble de règles qui régissent la communication entre deux entités distantes. Il définit le format des messages, leur ordre d'envoi et la gestion des erreurs.
+
+  Exemple : Le protocole HTTP (Couche 7) définit que pour obtenir ta page /osi
+  
+* Une entité protocolaire : Il s'agit de l'élément actif (logiciel ou matériel) qui implémente les fonctions d'une couche spécifique sur une machine. ils sont souvent appelées "entités homologues".
+
+  Exemple : Ton navigateur (Chrome) est une entité de couche 7. Il communique avec l'entité homologue (le serveur Web de PythonAnywhere)
+  
+* Un service : Un service représente l'offre de fonctionnalités qu'une couche inférieure met à la disposition de la couche immédiatement supérieure l'utilisateur. Le service décrit ce que fait la couche.
+
+  Exemple : La couche Liaison (Couche 2) offre un service de "transfert de trames" à la couche Réseau, peu importe que la connexion soit en Wi-Fi ou en Ethernet.
+
+* Une primitive de service : C'est une interaction élémentaire entre deux couches adjacentes sur la même machine. C'est l'outil qui permet de solliciter un service.
+
+  Exemple : Lorsque ton application Flask veut envoyer du JSON, elle utilise un type Request pour demander à la couche inférieure de transporter la donnée.
+  
+* Une Service Data Unit (SDU) par rapport à une PDU / Ces termes décrivent l'évolution de la donnée lors de l'encapsulation :
+
+  SDU : C'est la donnée "pure" transmise par la couche supérieure. Pour la couche actuelle, c'est la "marchandise" à transporter.
+
+  PDU : C'est l'unité complète produite par la couche. Elle contient la SDU à laquelle on a ajouté un en-tête (PCI) contenant les adresses ou numéros de ports.
+
+  Exemple : Ton adresse IP client 10.0.5.156 est ajoutée dans l'en-tête de la PDU de couche 3 (le Paquet IP) pour encapsuler la SDU venant de la couche Transport.
+  
+* Un point d'accès à un service SAP (Service Access Point) : C'est l'interface logique (ou l'adresse) qui permet à une couche d'accéder aux services de la couche située juste en dessous.
+
+  Exemple :Le Port TCP ou l'adresse IP (10.0.5.156) servent de SAP pour diriger les données vers la bonne application.
 
 ---------------------------------------------------
 🗺️ Séquence 5 : Retour sur le protocole DHCP
