@@ -99,6 +99,7 @@ Encapsulation du protocole DHCP dans le modèle OSI
 <img width="531" height="365" alt="image" src="https://github.com/user-attachments/assets/e8169f52-1414-453e-b240-dea40825d5d4" />
 
 
+
 Ce schéma illustre comment le protocole DHCP utilise les couches du modèle OSI pour fonctionner. Le message DHCP est généré en couche Application (7), encapsulé dans un segment UDP en couche Transport (4), puis dans un paquet IP en couche Réseau (3). Chaque couche ajoute ses propres informations pour permettre l'acheminement du message sur le réseau.  
 
 --------------------------------------------------------------------
