@@ -77,9 +77,9 @@ Vous pouvez observez les différentes couches OSI sur votre site **{site}.python
   
 * Une Service Data Unit (SDU) par rapport à une PDU / Ces termes décrivent l'évolution de la donnée lors de l'encapsulation :
 
-  SDU : C'est la donnée "pure" transmise par la couche supérieure. Pour la couche actuelle, c'est la "marchandise" à transporter.
+  - SDU : C'est la donnée "pure" transmise par la couche supérieure. Pour la couche actuelle, c'est la "marchandise" à transporter.
 
-  PDU : C'est l'unité complète produite par la couche. Elle contient la SDU à laquelle on a ajouté un en-tête (PCI) contenant les adresses ou numéros de ports.
+  - PDU : C'est l'unité complète produite par la couche. Elle contient la SDU à laquelle on a ajouté un en-tête (PCI) contenant les adresses ou numéros de ports.
 
   Exemple : Ton adresse IP client 10.0.5.156 est ajoutée dans l'en-tête de la PDU de couche 3 (le Paquet IP) pour encapsuler la SDU venant de la couche Transport.
   
