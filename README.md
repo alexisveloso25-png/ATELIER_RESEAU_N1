@@ -1,4 +1,4 @@
-------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 🎯Comprendre les bases du réseau (OSI, DHCP, NAT)
 ------------------------------------------------------------------------------------------------------
 Cet atelier propose une exploration pratique des fondamentaux des réseaux informatiques à travers trois mécanismes essentiels : le modèle OSI, le protocole DHCP et la traduction d’adresses NAT.  
